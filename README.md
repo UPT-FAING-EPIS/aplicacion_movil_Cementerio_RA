@@ -4,12 +4,11 @@
 
 1.  [Bienvenida]
 2.  [Objetivos]
-3.  [Sobre el curso]
-4.  [¿A quién está dirigido?]
-5.  [Programa del curso]
-6.  [Módulos del curso]
-7.  [Agradecimientos]
-8.  [Dudas]
+3.  [Alcance]
+4.  [Requerimientos]
+5.  [Diagramas]
+6.  [Recomendacion]
+7.  [Conclusion]
 
 ## :wave: Bienvenida
 
@@ -32,11 +31,23 @@ Asimismo, la capacitación del personal del cementerio para brindar asistencia y
 
 ### Requerimiento Funcionales
 
-### Diagrama de Clases
+![](images/casouso.PNG)
+
+### Requerimiento Funcionales
+
+![](images/requerimientos.PNG)
 
 ### Diagrama de Componentes
 
-### Diagrama de Arquitectura
+![](images/contenedor.PNG)
+
+### Diagrama de Paquete
+
+![](images/paquete.PNG)
+
+### Diagrama de Clases
+
+![](images/clases.PNG)
 
 
 ## :date: Recomendacion
@@ -50,4 +61,3 @@ Eso, al menos, pues si quieres desarrollar de mejor forma tus habilidades, es al
 El proyecto de cementerio con realidad aumentada es una innovadora manera de utilizar la tecnología para mejorar la experiencia de los visitantes y hacer que la visita al cementerio sea más educativa e interesante. La integración de la realidad aumentada permite a los visitantes explorar la historia y los detalles de cada tumba de una manera interactiva y atractiva. Además, esta tecnología también ofrece una oportunidad para preservar y compartir información valiosa sobre la cultura, la historia y las personas que yacen en el cementerio. 
 
 
-![](images/Parrilla%20Bootcamp%20DS%20OSL-01.png)
