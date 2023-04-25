@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding_min"
+    android:background="@drawable/ce02"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnArtistMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_artis_map"
+        app:icon="@drawable/ic_map_48"
+        app:iconGravity="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#FFF8BF"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLiteList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_lite_list"
+        app:icon="@drawable/icon_search"
+        app:iconGravity="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnArtistMap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#FFF8BF"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFormMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_form_map"
+        app:icon="@drawable/ic_fact_check_48"
+        app:iconGravity="top"
+        app:layout_constraintStart_toEndOf="@id/btnArtistMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#FFF8BF"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_padding_min"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnArtistMap">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/logo">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cementerio General de Tacna"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFirstMap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_first_map"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCameraView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_camera_view"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNewProcessor"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_new_processor"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPanorama"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_panorama"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHistoria"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_Historia"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRA"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_RA"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnInfo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_info"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

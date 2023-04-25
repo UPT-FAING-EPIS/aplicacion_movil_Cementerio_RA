@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/dialog_map_title"
+            app:titleTextColor="@color/white"
+            app:navigationIconTint="@color/white"
+            app:navigationIcon="@drawable/ic_clear">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_location_save"
+                android:layout_gravity="end"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                app:icon="@drawable/ic_done"
+                style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/> -->
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_twoline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/common_padding_default">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_location_card_title"
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:layout_marginHorizontal="@dimen/common_padding_default"
+                android:layout_marginTop="@dimen/common_padding_min"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:hint="@string/hint_birth_location"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:lines="2"
+                android:gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/common_padding_default"
+                android:layout_marginBottom="@dimen/common_padding_min"/>
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+        <ImageView
+            android:id="@+id/imgMarket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_location_alt"
+            android:contentDescription="@string/form_description_marker"
+            android:layout_marginBottom="@dimen/common_padding_middle"
+            app:tint="?attr/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".topics.InfoAppActivity"
+    android:background="@drawable/infoapp">
+
+    <ImageView
+        android:layout_width="361dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/logoreatec"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/descripcion1"
+        android:layout_width="306dp"
+        android:layout_height="143dp"
+        android:gravity="center"
+        android:text="Somos una pequeña empresa dedicada a la implementación de Realidad Aumentada ya sea en web y móviles. "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcion2"
+        android:layout_width="306dp"
+        android:layout_height="143dp"
+        android:gravity="right"
+        android:text="Versión 1.0.2 "
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_none">0dp</dimen>
+    <dimen name="common_padding_micro">4dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="common_padding_large">64dp</dimen>
+    <dimen name="img_map_size">56dp</dimen>
+    <dimen name="img_form_size">256dp</dimen>
+    <dimen name="item_height_twoline">72dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CementerioRA</string>
+    <string name="main_btn_artis_map">VISTA</string>
+    <string name="main_btn_lite_list">BUSCAR</string>
+    <string name="main_btn_form_map">AGREGAR</string>
+    <string name="btn_panorama">Obituario</string>
+    <string name="btn_new_processor">Noticias</string>
+    <string name="btn_first_map">DE PRUEBA</string>
+    <string name="btn_camera_view">MI UBICACION</string>
+    <string name="btn_info">Info APP</string>
+    <string name="btn_RA">REALIDAD AUMENTADA</string>
+    <string name="btn_Historia">Ilustres e Historia</string>
+    <string name="btn_control_gestures">Control y Gestos</string>
+    <string name="btg_normal">Normal</string>
+    <string name="btg_hybrid">HIbrido</string>
+    <string name="btg_satellite">Satelital</string>
+    <string name="btg_terrain">Terreno</string>
+    <string name="btg_none">N/A</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_surname">Apellidos</string>
+    <string name="hint_birth_location">Lugar de nacimiento</string>
+    <string name="form_btn_save">Guardar</string>
+    <string name="form_description_marker">Marcador de ubicacion</string>
+    <string name="dialog_map_title">Editar ubicacion</string>
+    <string name="btn_location_save">Listo</string>
+    <string name="dialog_location_card_title">Ubicacion seleccionada:</string>
+    <string name="dialog_address_invalid">Ubicacion no valida</string>
+</resources>

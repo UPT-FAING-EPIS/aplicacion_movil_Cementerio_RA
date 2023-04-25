@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FullScreenDialog" parent="ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Window.Fullscreen">
+        <item name = "android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
+
+
+    </style>
+</resources>
